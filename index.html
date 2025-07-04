@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskAlaga</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+
+        <img src="images/logo.png" alt="TaskAlaga Logo" id="task_alaga">
+
+        <div class="text-container">
+            <h2>TaskAlaga</h2>
+            <p>A caring To-Do List For The Elderly and<br>
+            Special Needs Community</p>
+        </div>
+
+        <div class="header-right">
+            <input type="text" placeholder="Search...">
+            <img src="images/user_profile.png" alt="User Profile" id="header_profile">
+        </div>
+
+    </header>
+
+    <main>
+        <aside class="sidebar">
+            <h3>⚙️ Settings</h3>
+            <button>Voice assistant</button>
+            <button>High contrast mode</button>
+            <button>Guardian</button>
+            <button>Help and support</button>
+        </aside>
+
+        <section class="main-content">
+
+            <div class="top-controls">
+                <div class="left-controls">
+                    <input type="text" id="task-input" placeholder="Enter task name...">
+                    <button id="add-list-btn">Add list ➕</button>
+                    <button id="delete-all-btn">Delete all 🗑️</button>
+
+                    <div class="legend">
+                        <span class="legend-item">✔ Completed</span>
+                        <span class="legend-item">✖ Missing</span>
+                    </div>
+                </div>
+
+                <div class="voice-input">
+                    <img src="images/voice_icon.png" alt="Voice icon">
+                    <div>
+                        <strong>Voice input</strong><br>
+                        <small>Say a task name like<br>“Take medicine” to add it</small>
+                    </div>
+                </div>
+            </div>
+
+            <div id="todo-list-container" class="todo-list-container">
+                </div>
+
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
