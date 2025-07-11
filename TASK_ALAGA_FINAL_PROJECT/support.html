@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TaskAlaga - Help and Support</title>
+  <link rel="stylesheet" href="style_4.css">
+  <style>
+    .support-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      padding: 40px;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .support-card {
+      border: 2px solid #a97b46;
+      border-radius: 10px;
+      padding: 20px;
+      background-color: #fffdf8;
+    }
+
+    .support-card h4 {
+      margin-bottom: 5px;
+    }
+
+    .support-card p {
+      font-size: 14px;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="images/logo.png" alt="TaskAlaga Logo" id="task_alaga" />
+    <div class="text-container">
+      <h2>TaskAlaga</h2>
+      <p>A Caring To-Do List for the Elderly and Special Needs Community</p>
+    </div>
+    <div class="header-right">
+      <input type="text" placeholder="Search..." />
+      <img src="images/user_profile.png" alt="User Profile" id="header_profile" />
+    </div>
+  </header>
+
+  <main>
+    <aside class="sidebar">
+      <button onclick="navigateTo('index.html')" id="back-home">⬅ Back to Main Page</button>
+      <button onclick="navigateTo('index.html')">Voice assistant</button>
+      <button onclick="navigateTo('index.html')">High contrast mode</button>
+      <button onclick="navigateTo('guardian.html')">Guardian</button>
+      <button onclick="navigateTo('support.html')">Help and support</button>
+    </aside>
+
+    <section class="main-content">
+      <div class="support-container">
+        <div class="support-card">
+          <h4>📖 User Guide</h4>
+          <p>Learn how to use the app</p>
+        </div>
+        <div class="support-card">
+          <h4>📞 Contact Support</h4>
+          <p>Get in touch with our support team</p>
+        </div>
+        <div class="support-card">
+          <h4>▶️ Video Tutorials</h4>
+          <p>Watch step-by-step tutorials</p>
+        </div>
+        <div class="support-card">
+          <h4>❓ FAQ</h4>
+          <p>Find answers to common questions</p>
+        </div>
+        <div class="support-card">
+          <h4>💬 Live Chat</h4>
+          <p>Chat with a support agent</p>
+        </div>
+        <div class="support-card">
+          <h4>♿ Accessibility Help</h4>
+          <p>Get help with accessibility features</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+    function navigateTo(page) {
+      window.location.href = page;
+    }
+  </script>
+
+</body>
+</html>

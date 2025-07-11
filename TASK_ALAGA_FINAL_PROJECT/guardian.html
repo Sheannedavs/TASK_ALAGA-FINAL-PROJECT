@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TaskAlaga - Guardian</title>
+  <link rel="stylesheet" href="style_4.css">
+  <style>
+    /* Guardian-specific styles */
+    .guardian-container {
+      padding: 30px;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .guardian-header {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .guardian-header img {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      background: #ccc;
+    }
+    .relationship-tag {
+      border: 1px solid #aaa;
+      padding: 3px 8px;
+      border-radius: 10px;
+      margin-left: 10px;
+      font-size: 14px;
+    }
+    .wellness-box {
+      margin-top: 30px;
+      padding: 20px;
+      background: #fefefe;
+      border-radius: 10px;
+      box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .emotions span {
+      font-size: 32px;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+    .summary-box {
+      margin-top: 30px;
+      padding: 20px;
+      border: 1px solid #000;
+      border-radius: 10px;
+      background: #fff;
+    }
+    .guardian-buttons {
+      margin-top: 15px;
+    }
+    .guardian-buttons button {
+      margin-right: 10px;
+      padding: 10px 20px;
+      border-radius: 20px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="images/logo.png" alt="TaskAlaga Logo" id="task_alaga" />
+    <div class="text-container">
+      <h2>TaskAlaga</h2>
+      <p>A Caring To-Do List for the Elderly and Special Needs Community</p>
+    </div>
+    <div class="header-right">
+      <input type="text" placeholder="Search..." />
+      <img src="images/user_profile.png" alt="User Profile" id="header_profile" />
+    </div>
+  </header>
+
+  <main>
+    <aside class="sidebar">
+      <button onclick="navigateTo('index.html')" id="back-home">⬅ Back to Main Page</button>
+      <button onclick="navigateTo('index.html')">Voice assistant</button>
+      <button onclick="navigateTo('index.html')">High contrast mode</button>
+      <button onclick="navigateTo('guardian.html')">Guardian</button>
+      <button onclick="navigateTo('support.html')">Help and support</button>
+    </aside>
+
+    <section class="main-content">
+      <div class="guardian-container">
+        <div class="guardian-header">
+          <img src="f9f2297a-2b46-4fb8-b2f9-dc1bd6c210a1.jpg" alt="Guardian" />
+          <div>
+            <h3>Guardian's name <span class="relationship-tag">Relationship</span></h3>
+            <p>📞 000-000-0000</p>
+            <p>✉️ loremipsum@gmail.com</p>
+          </div>
+        </div>
+
+        <div class="wellness-box">
+          <h4>DAILY WELLNESS CHECK</h4>
+          <p>How are you feeling?</p>
+          <div class="emotions" id="emoji-picker">
+            <span>😀</span><span>😊</span><span>😐</span><span>😔</span><span>😢</span>
+          </div>
+          <div class="guardian-buttons">
+            <button>📞 Call guardian</button>
+            <button>💬 Message guardian</button>
+          </div>
+        </div>
+
+        <div class="summary-box">
+          <h4>3-day wellness summary:</h4>
+          <ul id="wellness-summary">
+            <li>July 11: <span id="latest-emoji">😐</span></li>
+            <li>July 10: 🙂</li>
+            <li>July 9: 😐</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script defer src="script.js"></script>
+</body>
+</html>
